@@ -1,0 +1,26 @@
+.partners{
+  position: relative;
+  padding: 250px 0 150px;
+  &__title{
+    position: absolute;
+    right: 110px;
+    top: 0;
+    font-family: $Gar;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 60px;
+    color: #FFFFFF;
+  }
+  &__block{
+    position: relative;
+
+  }
+  &__block-img{
+    width: 270px;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,112 @@
+.info{
+  position: relative;
+  padding: 0 0 378px;
+  background: url("../images/infoBG.png") center/cover no-repeat;
+  &::before{
+    content: "";
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    top: -5px;
+    left: 0;
+    right: 0;
+    background-color: $black;
+    clip-path: polygon(0 0, 0 100%, 100% 0);
+  }
+  &::after{
+    content: "";
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    background-color: $black;
+    clip-path: polygon(100% 100%, 0 100%, 100% 0);
+  }
+  .container{
+    position: relative;
+  }
+  &__image{
+    position: absolute;
+    right: 390px;
+    top: 284px;
+    max-width: 1200px;
+  }
+  &__block{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    &-title{
+      font-family: $Gar;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 60px;
+      color: $black;
+      margin: 240px 0 358px;
+    }
+    &-desc{
+      font-family: $Rob;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      color: $black;
+      &:nth-of-type(2){
+        margin: 25px 0;
+      }
+    }
+  }
+  &__cards{
+    margin: 260px 0 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  &__card{
+    text-align: center;
+    padding: 37px 20px 43px 19px;
+    background-color: $black;
+    width: 270px;
+    height: 518px;
+    border-radius: 25px;
+    border: 1px solid $milk;
+    z-index: 5;
+    transition: .4s;
+    &:hover{
+      transform: scale(1.1);
+      transition: .4s;
+    }
+    &-img{
+      max-width: 133px;
+      min-height: 137px;
+    }
+    &-title{
+      margin: 39px 0 19px;
+      font-family: $Rob;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 28px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #FBFBFB;
+    }
+    &-desc{
+      font-family: $Rob;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      text-align: center;
+      color: $milk;
+    }
+  }
+}

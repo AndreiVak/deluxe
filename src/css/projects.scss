@@ -1,0 +1,87 @@
+.projects {
+  position: relative;
+  padding: 80px 0 130px;
+  &__title {
+    font-family: $Gar;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 45px;
+    color: $milk;
+    text-align: center;
+  }
+  &__line {
+    margin: 23px 0 34px;
+    height: 1px;
+    background: $milk;
+    border-radius: 5px;
+  }
+  &__row{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 23px 30px;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+  }
+  &__card {
+    min-width: 290px;
+    width: calc(33.333% - 20px);
+    text-align: center;
+  }
+  &__card-title {
+    margin: 26px 0 7px;
+    font-family: $Gar;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
+  }
+  &__card-subtitle {
+    font-family: $Gar;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    margin-bottom: 34px;
+  }
+  &__before{
+    position: absolute;
+    left: 0;
+    top: 38%;
+    z-index: 1;
+  }
+  &__after {
+    position: absolute;
+    right: -15%;
+    bottom: 15%;
+    z-index: 1;
+  }
+  &__btns {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px 75px;
+    margin-top: 88px;
+  }
+  &__btn {
+    padding: 23px 0;
+    width: 220px;
+    border: 1px solid $milk;
+    border-radius: 5px;
+    font-family: $Gar;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: $milk;
+    background: transparent;
+    &-active {
+      background: $milk;
+      color: $black;
+    }
+  }
+}

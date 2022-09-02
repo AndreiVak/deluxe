@@ -1,0 +1,21 @@
+.about-us__room {
+  padding: 129px 0 8px;
+  text-align: center;
+  background: url("../../src/images/about-us/BGroom.png") center/cover no-repeat;
+  &__title{
+    font-family: $Rob;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #FFFFFF;
+  }
+  &__desc{
+    font-family: $Rob;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    color: #9F9F9F;
+  }
+}
