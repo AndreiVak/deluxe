@@ -1,6 +1,10 @@
 .header {
+  position: relative;
   background: $black;
   padding: 13px 0 20px;
+  .burger{
+    display: none;
+  }
   &__nav {
     display: flex;
     justify-content: space-between;
@@ -58,4 +62,140 @@
       text-fill-color: transparent;
     }
   }
+}
+
+@media (max-width: 1440px) {
+
+}
+
+@media (max-width: 1320px) {
+
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 992px) {
+    .header__list{
+      column-gap: 25px;
+    }
+}
+
+@media (max-width: 876px) {
+    .header{
+      &__nav{
+        justify-content: flex-start;
+        column-gap: 50px;
+      }
+      &__list{
+        display: flex;
+        transition: .5s;
+        flex-direction: column;
+        width: 0;
+        position: fixed;
+        height: 100vh;
+        background: #1F1F1F;
+        z-index: 120;
+        top: 0;
+        left: 0;
+        justify-content: center;
+        align-items: center;
+        row-gap: 20px;
+        .header__list-item{
+          font-size: 0;
+          text-align: center;
+        }
+        &_active{
+          width: 100%;
+          transition: .5s;
+          .header__list-item{
+            font-size: 25px;
+            transition: .5s;
+          }
+        }
+      }
+      .burger{
+        display: block;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        top: 20px;
+        right: 20px;
+        z-index: 121;
+        &__line{
+          position: absolute;
+          width: 40px;
+          height: 5px;
+          border-radius: 1.5px;
+          background: #FFFFFF;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+          &::before{
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 5px;
+            border-radius: 1.5px;
+            background: #FFFFFF;
+            left: 0;
+            top: -10px;
+          }
+          &::after{
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 5px;
+            border-radius: 1.5px;
+            background: #FFFFFF;
+            left: 0;
+            top: 10px;
+          }
+        }
+        &_active{
+          .burger__line{
+            background: transparent;
+            &:before{
+              top: -10px;
+              transform: rotate(45deg);
+              transition: .3s;
+            }
+            &:after{
+              top: -10px;
+              transform: rotate(-45deg);
+              transition: .3s;
+            }
+          }
+        }
+      }
+    }
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 676px) {
+
+}
+
+@media (max-width: 576px) {
+
+}
+
+@media (max-width: 425px) {
+
+}
+
+@media (max-width: 375px) {
+
+}
+
+@media (max-width: 325px) {
+
 }

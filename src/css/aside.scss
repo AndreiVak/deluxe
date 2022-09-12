@@ -14,12 +14,7 @@
     position: relative;
     transform: rotate(-90deg);
     white-space: nowrap;
-    font-family: $Rob;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    color: $milk;
+    @include text($Rob, 400, 14px, 16px, $milk);
     &::before {
       content: "";
       width: 75px;
@@ -42,4 +37,10 @@
     color: #E0DEDE;
     font-size: 20px;
   }
+}
+
+@media (max-width: 1320px) {
+    .aside{
+      display: none;
+    }
 }

@@ -21,12 +21,12 @@
                 design studio
             </h1>
             <ul class="header__list">
-                <li class="header__list-item"><a href="./src/pages/service.html">Услуги</a></li>
-                <li class="header__list-item"><a href="./src/pages/repair.html">Ремонт</a></li>
-                <li class="header__list-item">Портфолио</li>
-                <li class="header__list-item"><a href="./src/pages/about-us.html">О нас</a></li>
-                <li class="header__list-item">Статьи</li>
-                <li class="header__list-item">Контакты</li>
+                <li class="header__list-item"><a class="header__link" href="./src/pages/service.html">Услуги</a></li>
+                <li class="header__list-item"><a class="header__link" href="./src/pages/repair.html">Ремонт</a></li>
+                <li class="header__list-item"><a class="header__link" href="./src/pages/portfolio.html">Портфолио</a></li>
+                <li class="header__list-item"><a class="header__link" href="./src/pages/about-us.html">О нас</a></li>
+                <li class="header__list-item"><a class="header__link" href="./src/pages/articles.html">Статьи</a></li>
+                <li class="header__list-item"><a class="header__link" href="./src/pages/contact.html">Контакты</a></li>
             </ul>
             <div class="header__contact">
                 <a href="tel:8 (700) 300-03-40" class="header__contact-icon">
@@ -47,6 +47,9 @@
                 <a class="header__contact-num" href="tel:8 (700) 300-03-40">8 (700) 300-03-40</a>
             </div>
         </nav>
+        <div class="burger">
+            <span class="burger__line"></span>
+        </div>
     </div>
 </header>
 
@@ -79,7 +82,7 @@
         </span>
         <div class="container">
             <h2 class="home__title">РОСКОШНЫЙ ДИЗАЙН <br>
-                ИНТЕРЬЕРА В БИШКЕКЕ</h2>
+                ИНТЕРЬЕРА В НУР-СУЛТАНЕ</h2>
             <p class="home__subtitle">Мы создаем уникальные проекты любой сложности <br> на высоком уровне качества!</p>
             <button class="home__btn">Расчет стоимости</button>
         </div>
@@ -106,8 +109,8 @@
                     <h3 class="projects__card-title">Дом для двух поколений</h3>
                     <p class="projects__card-subtitle">Уютная студия в ЖК Адмирал</p>
                 </div>
-                <div class="projects__card projects__card-lived">
-                    <a data-fancybox="gallery" data-src="./src/images/project2.png"
+                <div class="projects__card projects__card-comers">
+                    <a data-width="600" data-height="600" data-fancybox="gallery" data-src="./src/images/project2.png"
                        data-caption="Дом для двух поколений&lt;br /&gt;Уютная студия в ЖК Адмирал" href="">
                         <img class="projects__card-img" src="./src/images/project2.png" alt="Project">
                     </a>
@@ -115,7 +118,7 @@
                     <p class="projects__card-subtitle">Уютная студия в ЖК Адмирал</p>
                 </div>
                 <div class="projects__card projects__card-comers">
-                    <a data-fancybox="gallery" data-src="./src/images/project3.png"
+                    <a data-width="600" data-height="600" data-fancybox="gallery" data-src="./src/images/project3.png"
                        data-caption="Дом для двух поколений&lt;br /&gt;Уютная студия в ЖК Адмирал" href="">
                         <img class="projects__card-img" src="./src/images/project3.png" alt="Project">
                     </a>
@@ -124,7 +127,7 @@
                 </div>
             </div>
             <div class="projects__row">
-                <div class="projects__card projects__card-lived">
+                <div class="projects__card projects__card-comers">
                     <a data-fancybox="gallery" data-src="./src/images/project4.png"
                        data-caption="Дом для двух поколений&lt;br /&gt;Уютная студия в ЖК Адмирал" href="">
                         <img class="projects__card-img" src="./src/images/project4.png" alt="Project">
@@ -140,7 +143,7 @@
                     <h3 class="projects__card-title">Дом для двух поколений</h3>
                     <p class="projects__card-subtitle">Уютная студия в ЖК Адмирал</p>
                 </div>
-                <div class="projects__card projects__card-lived">
+                <div class="projects__card projects__card-comers">
                     <a data-fancybox="gallery" data-src="./src/images/project6.png"
                        data-caption="Дом для двух поколений&lt;br /&gt;Уютная студия в ЖК Адмирал" href="">
                         <img class="projects__card-img" src="./src/images/project6.png" alt="Project">
@@ -150,7 +153,7 @@
                 </div>
             </div>
             <div class="projects__row">
-                <div class="projects__card projects__card-comers">
+                <div class="projects__card projects__card-lived">
                     <a data-fancybox="gallery" data-src="./src/images/project7.png"
                        data-caption="Дом для двух поколений&lt;br /&gt;Уютная студия в ЖК Адмирал" href="">
                         <img class="projects__card-img" src="./src/images/project7.png" alt="Project">
@@ -166,7 +169,7 @@
                     <h3 class="projects__card-title">Дом для двух поколений</h3>
                     <p class="projects__card-subtitle">Уютная студия в ЖК Адмирал</p>
                 </div>
-                <div class="projects__card projects__card-comers">
+                <div class="projects__card projects__card-lived">
                     <a data-fancybox="gallery" data-src="./src/images/project9.png"
                        data-caption="Дом для двух поколений&lt;br /&gt;Уютная студия в ЖК Адмирал" href="">
                         <img class="projects__card-img" src="./src/images/project9.png" alt="Project">
@@ -184,7 +187,7 @@
                     <h3 class="projects__card-title">Дом для двух поколений</h3>
                     <p class="projects__card-subtitle">Уютная студия в ЖК Адмирал</p>
                 </div>
-                <div class="projects__card projects__card-comers">
+                <div class="projects__card projects__card-lived">
                     <a data-fancybox="gallery" data-src="./src/images/project11.png"
                        data-caption="Дом для двух поколений&lt;br /&gt;Уютная студия в ЖК Адмирал" href="">
                         <img class="projects__card-img" src="./src/images/project11.png" alt="Project">
@@ -725,30 +728,29 @@
             <h2 class="partners__title">Наши уважаемые партнеры, <br> которые остались довольны <br> сотрудничеством с нами</h2>
             <div class="partners__block">
                 <div class="partners__block-box">
-                    <img class="partners__block-img" src="./src/images/partnersMiele.png" alt="Partners logo">
-                    <img class="partners__block-img" src="./src/images/partnersMiele.png" alt="Partners logo">
-                    <img class="partners__block-img" src="./src/images/partnersMiele.png" alt="Partners logo">
+                    <img class="partners__logo" src="./src/images/partnersMiele.png" alt="Partners logo">
+                    <img class="partners__logo" src="./src/images/partnersMiele.png" alt="Partners logo">
+                    <img class="partners__logo" src="./src/images/partnersMiele.png" alt="Partners logo">
                 </div>
                 <div class="partners__block-box">
-                    <img class="partners__block-img" src="./src/images/partnersDesi.png" alt="Partners logo">
-                    <img class="partners__block-img" src="./src/images/partnersDesi.png" alt="Partners logo">
-                    <img class="partners__block-img" src="./src/images/partnersDesi.png" alt="Partners logo">
+                    <img class="partners__logo desiderio__logo" src="./src/images/partnersDesi.png" alt="Partners logo">
+                    <img class="partners__logo desiderio__logo" src="./src/images/partnersDesi.png" alt="Partners logo">
+                    <img class="partners__logo desiderio__logo" src="./src/images/partnersDesi.png" alt="Partners logo">
                 </div>
                 <div class="partners__block-box">
-                    <img class="partners__block-img" src="./src/images/partnersMiele.png" alt="Partners logo">
-                    <img class="partners__block-img" src="./src/images/partnersMiele.png" alt="Partners logo">
-                    <img class="partners__block-img" src="./src/images/partnersMiele.png" alt="Partners logo">
+                    <img class="partners__logo" src="./src/images/partnersMiele.png" alt="Partners logo">
+                    <img class="partners__logo" src="./src/images/partnersMiele.png" alt="Partners logo">
+                    <img class="partners__logo" src="./src/images/partnersMiele.png" alt="Partners logo">
                 </div>
                 <div class="partners__block-box">
-                    <img class="partners__block-img" src="./src/images/partnersDesi.png" alt="Partners logo">
-                    <img class="partners__block-img" src="./src/images/partnersDesi.png" alt="Partners logo">
-                    <img class="partners__block-img" src="./src/images/partnersDesi.png" alt="Partners logo">
+                    <img class="partners__logo desiderio__logo" src="./src/images/partnersDesi.png" alt="Partners logo">
+                    <img class="partners__logo desiderio__logo" src="./src/images/partnersDesi.png" alt="Partners logo">
+                    <img class="partners__logo desiderio__logo" src="./src/images/partnersDesi.png" alt="Partners logo">
                 </div>
             </div>
         </div>
     </section>
 </main>
-
 
 <footer class="footer">
     <div class="footer__top">
@@ -794,5 +796,6 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 <script src="./src/js/main.js"></script>
+<a href="#" title="Вернуться к началу" class="top__button">🠕</a>
 </body>
 </html>

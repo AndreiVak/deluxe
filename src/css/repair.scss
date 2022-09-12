@@ -1,0 +1,273 @@
+.repair {
+  &__navBG {
+    background: url("../../src/images/repair/repairRoomBG.png") center/cover no-repeat;
+  }
+
+  &__projects-desc {
+    @include text($Rob, 400, 16px, 26px, $milk);
+    text-align: center;
+    margin-bottom: 85px;
+
+    .projects__repair {
+      padding-bottom: 130px;
+    }
+  }
+
+  &__projects-title {
+    @include text($Gar, 700, 40px, 45px, $milk);
+    text-align: center;
+  }
+}
+
+.payment__order {
+  background: $black;
+  padding: 174px 0 130px;
+
+  &-title {
+    @include text($Gar, 700, 40px, 42px, $milk);
+    text-align: center;
+    margin-bottom: 55px;
+  }
+
+  &-block {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 100px;
+  }
+
+  &-text {
+    width: calc(50% - 50px);
+
+    &-info {
+      @include text($Rob, 400, 16px, 30px, #fff)
+    }
+
+    &-percent {
+      @include text($Rob, 400, 20px, 0, #fff)
+    }
+
+    &-desc {
+      display: flex;
+      column-gap: 10px;
+      margin: 17px 0;
+    }
+  }
+}
+
+.terms {
+  background: $black;
+  padding-bottom: 236px;
+
+  &__title {
+    @include text($Gar, 700, 40px, 45px, $milk);
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__box {
+    background: #EFEFEF;
+    border-radius: 5px 0 0 5px;
+    width: 100%;
+    margin-bottom: 20px;
+
+    &:nth-child(2) {
+      background: $black;
+      border: 1px solid #E1DECE;
+      border-radius: 0 5px 5px 0;
+    }
+
+    &-desc {
+      @include text($Gar, 700, 16px, 18px, $black);
+      padding: 21px 133px;
+    }
+
+    &-text {
+      color: $milk;
+    }
+  }
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__column {
+    background: #EFEFEF;
+    width: 25%;
+
+    &:nth-child(even) {
+      background: #C4C4C4;
+    }
+
+    &:first-child {
+      border-radius: 5px 0 0 5px;
+    }
+
+    &:last-child {
+      border-radius: 0 5px 5px 0;
+    }
+
+    &-square {
+      @include text($Gar, 700, 16px, 18px, $black);
+      margin: 30px 0;
+      text-align: center;
+    }
+  }
+
+  &__btn {
+    &:hover {
+      background: $milk;
+      color: $black;
+      transition: 0.7s;
+    }
+  }
+}
+
+.rate {
+  padding-bottom: 247px;
+  background: $black;
+
+  &__title {
+    @include text($Gar, 700, 40px, 45px, $milk);
+    text-align: center;
+  }
+
+  &__block {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+  }
+
+  &__card {
+    position: relative;
+    width: calc(25% - 22.5px);
+    text-align: center;
+    background: #FFF;
+    border-radius: 5px;
+    padding: 11px 0;
+    cursor: pointer;
+    transition: 2s;
+
+    &:hover {
+      transform: scale(1.1);
+      transition: 2s;
+    }
+  }
+
+  &__card-title {
+    @include text($Rob, 400, 16px, 26px, $black);
+    background: $milk;
+  }
+
+  &__card-desc {
+    @include text($Rob, 400, 9px, 12px, $black);
+    margin-top: 16px;
+  }
+
+  &__card-info {
+    @include text($Rob, 400, 18px, 26px, $black);
+  }
+
+  &__card-subtitle {
+    @include text($Rob, 400, 10px, 12px, #191919);
+    margin: 20px 0 10px;
+    font-weight: bold;
+  }
+
+  &__card-description {
+    @include text($Rob, 400, 10px, 20px, #191919);
+    margin-bottom: 65px;
+    padding: 0 18px;
+    text-align: left;
+  }
+
+  &__card-btn {
+    @include text($Gar, 400, 14px, 16px, #FFFFFF);
+    background: #191919;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    padding: 10px 65px;
+    transition: 0.7s;
+    &:hover {
+      background: $milk;
+      color: $black;
+      transition: 0.7s;
+    }
+  }
+}
+
+.work {
+  padding-bottom: 121px;
+  &__title {
+    @include text($Gar, 700, 40px, 0, $milk);
+    text-align: center;
+  }
+  &__content {
+    display: flex;
+    column-gap: 40px;
+    &-img {
+      width: calc(50% - 20px);
+    }
+    &-image {
+      width: 100%;
+    }
+    &-text {
+      width: calc(50% - 20px);
+    }
+    &-desc {
+      @include text($Rob, 400, 16px, 26px, #fff);
+      padding-bottom: 16px;
+    }
+  }
+}
+
+.repair__info{
+  background: $black;
+  padding-bottom: 100px;
+  &-block{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 134px 100px;
+  }
+  &-card{
+    width: calc(50% - 50px);
+    &-img{
+      width: 60px;
+    }
+    &-title{
+      @include text($Rob, 700, 18px, 21px, #FFFFFF);
+      margin: 51px 0 21px;
+    }
+    &-desc{
+      @include text($Rob, 400, 14px, 24px, #C4C4C4)
+    }
+  }
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.topButton {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  font-size: 25px;
+  border-radius: 50%;
+  width: 50px;
+  background: $milk;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  color: #f1f1f1;
+  opacity: 0.2;
+}

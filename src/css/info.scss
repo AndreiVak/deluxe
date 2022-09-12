@@ -43,21 +43,11 @@
     flex-direction: column;
     justify-content: flex-end;
     &-title{
-      font-family: $Gar;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 40px;
-      line-height: 60px;
-      color: $black;
+      @include text($Gar, 400, 40px, 60px, $black);
       margin: 240px 0 358px;
     }
     &-desc{
-      font-family: $Rob;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 26px;
-      color: $black;
+      @include text($Rob, 400, 16px, 26px, $black);
       &:nth-of-type(2){
         margin: 25px 0;
       }
@@ -90,23 +80,13 @@
     }
     &-title{
       margin: 39px 0 19px;
-      font-family: $Rob;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 28px;
+      @include text($Rob, 400, 18px, 28px, #FBFBFB);
       text-align: center;
       text-transform: uppercase;
-      color: #FBFBFB;
     }
     &-desc{
-      font-family: $Rob;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 24px;
+      @include text($Rob, 400, 14px, 24px, $milk);
       text-align: center;
-      color: $milk;
     }
   }
 }

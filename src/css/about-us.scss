@@ -1,21 +1,201 @@
-.about-us__room {
-  padding: 129px 0 8px;
-  text-align: center;
-  background: url("../../src/images/about-us/BGroom.png") center/cover no-repeat;
-  &__title{
-    font-family: $Rob;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 22px;
-    color: #FFFFFF;
+.about-us{
+  &__navBG{
+    background: url("../../src/images/about-us/BGroom.png") center/cover no-repeat;
   }
-  &__desc{
-    font-family: $Rob;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 28px;
-    color: #9F9F9F;
+  &__video{
+    padding: 80px 0;
+    position: relative;
+  }
+  &__img{
+    width: 100%;
+  }
+  &__link{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: $milk;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    &::before{
+      content: "▶";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-35%, -50%);
+      font-size: 30px;
+      color: $black;
+    }
+  }
+  &__info{
+    position: relative;
+    padding: 30px 0 124px;
+    background: #D3D3D3;
+    &::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 800px;
+      background: $black;
+      clip-path: polygon(100% 0, 0 0, 100% 100%);
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 800px;
+      background: $black;
+      clip-path: polygon(0 100%, 0 0, 100% 100%);
+
+    }
+    &-card{
+      position: relative;
+      background: $black;
+      z-index: 11;
+      &-desc{
+        @include text($Rob, 400, 16px, 26px, #fff);
+        padding: 77px 100px;
+      }
+    }
+    &-content{
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      z-index: 10;
+
+      &-img{
+        width: 668px;
+        position: absolute;
+        left: -165px;
+        top: 200px;
+      }
+      &-text{
+        width: 60%;
+      }
+      &-title{
+        @include text($Rob, 700, 80px, 70px, #191919);
+        margin: 435px 0 63px;
+        text-align: right;
+      }
+      &-description{
+        @include text($Rob, 400, 16px, 26px, #191919);
+        margin-bottom: 338px;
+      }
+    }
+    &-image{
+      width: 30%;
+    }
+  }
+  &__cards{
+    background: $black;
+    padding: 100px 0 70px;
+    &-block{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px 30px;
+    }
+    &-card{
+      height: 478px;
+      width: calc(25% - 22.5px);
+    }
+    &-title{
+      @include text($Rob, 400, 18px, 0, #FFFFFF);
+      padding: 10px 0;
+      text-align: center;
+    }
+    &-subtitle{
+      @include text($Rob, 400, 16px, 0, $milk);
+      text-align: center;
+    }
+    &-btns{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &-btn{
+      @include text($Gar, 400, 14px, 16px, $milk);
+      padding: 23px 0;
+      width: 220px;
+      border: 1px solid $milk;
+      border-radius: 5px;
+      margin-top: 100px;
+      background: transparent;
+      cursor: pointer;
+      transition: 0.7s;
+      &:hover{
+        background: $milk;
+        color: $black;
+        transition: 0.7s;
+      }
+    }
+  }
+  &__advice{
+    display: flex;
+    padding: 80px 0 90px;
+    margin-bottom: 30px;
+    &-title{
+      @include text($Gar, 700, 40px, 45px, $milk);
+      text-align: center;
+    }
+    &-list{
+      padding: 41px 0 10px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      row-gap: 30px;
+    }
+    &-item{
+      cursor: pointer;
+      &-title{
+        @include text($Gar, 700, 24px, 27px, $milk);
+        position: relative;
+        &::before{
+          content: '▼';
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+      }
+      &-open > &-text{
+        display: inline-block;
+      }
+      &-text{
+        display: none;
+        @include text($Rob, 400, 16px, 26px, #fff);
+        margin: 30px 0 0;
+      }
+    }
+  }
+  &__activity{
+    padding-bottom: 180px;
+    background: $black;
+    &-title{
+      @include text($Gar, 700, 40px, 45px, $milk);
+      text-align: center;
+    }
+    &-card{
+      display: flex;
+    }
+    &-img{
+      width: 50%;
+    }
+    &-block{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+      background: $milk;
+    }
+    &-text{
+      &-desc{
+        @include text($Gar, 700, 16px, 18px, #191919);
+        padding: 25px 0 25px 35px;
+      }
+    }
   }
 }

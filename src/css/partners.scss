@@ -1,26 +1,26 @@
 .partners{
   position: relative;
-  padding: 250px 0 150px;
+  padding: 250px 0 50px;
   &__title{
     position: absolute;
     right: 110px;
     top: 0;
-    font-family: $Gar;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 60px;
-    color: #FFFFFF;
+    @include text($Gar, 400, 40px, 60px, #fff);
   }
   &__block{
-    position: relative;
-
-  }
-  &__block-img{
-    width: 270px;
-    height: 50px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    align-items: center;
+    column-gap: 48px;
+  }
+  &__logo{
+    max-width: 242px;
+    transition: .4s;
+    &:hover{
+      transform: scale(1.1);
+      transition: .4s;
+    }
+  }
+  .desiderio__logo:nth-child(2){
+    margin: 90px 0;
   }
 }

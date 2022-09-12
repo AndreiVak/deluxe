@@ -17,12 +17,7 @@
     position: absolute;
     top: -20px;
     right: 110px;
-    font-family: $Gar;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 60px;
-    color: #FFFFFF;
+    @include text($Gar, 400, 40px, 60px, #fff);
   }
   &__block{
     position: relative;
@@ -41,21 +36,11 @@
       height: 80px;
     }
     &-title{
-      font-family: $Rob;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 21px;
-      color: #FFFFFF;
+      @include text($Rob, 700, 18px, 21px, #fff);
       margin: 50px 0 20px;
     }
     &-desc{
-      font-family: $Rob;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 24px;
-      color: #C4C4C4;
+      @include text($Rob, 400, 14px, 24px, #C4C4C4);
     }
   }
 }

@@ -5,8 +5,6 @@
 
 .swiper-slide {
   font-size: 18px;
-
-  /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -24,13 +22,8 @@
 .carousel {
   padding-bottom: 91px;
   &__title {
-    font-family: $Gar;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 46px;
+    @include text($Gar, 400, 40px, 46px, #fff);
     text-align: center;
-    color: #FFFFFF;
   }
   &__content{
     display: flex;
@@ -39,16 +32,12 @@
   &__img{
     width: calc(50% - 20px);
   }
+
   &__info{
     width: calc(50% - 20px);
   }
   &__text{
-    font-family: $Rob;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    color: #FFFFFF;
+    @include text($Rob, 400, 16px, 26px, #fff);
     margin-bottom: 33px;
   }
   &__stats{
@@ -65,31 +54,17 @@
     &-rotate{
       position: relative;
       left: 10px;
-      font-family: $Rob;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 14px;
+      @include text($Rob, 400, 12px, 14px, #fff);
       text-transform: uppercase;
-      color: #FFFFFF;
       transform: rotate(-90deg);
     }
     &-num{
-      font-family: $Rob;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 45px;
-      line-height: 53px;
+      @include text($Rob, 400, 45px, 53px, $milk);
       text-transform: uppercase;
     }
     &-text{
-      font-family: $Rob;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 14px;
+      @include text($Rob, 400, 12px, 14px, #fff);
       text-transform: uppercase;
-      color: #FFFFFF;
     }
   }
   &__bot{

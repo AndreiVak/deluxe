@@ -28,12 +28,7 @@
     position: absolute;
     top: 230px;
     right: 110px;
-    font-family: $Gar;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 60px;
-    color: #191919;
+    @include text($Gar, 400, 40px, 60px, #191919);
   }
   &__block{
     position: relative;
@@ -46,20 +41,10 @@
       column-gap: 30px;
     }
     &-title{
-      font-family: $Gar;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 24px;
-      line-height: 36px;
-      color: #101010;
+      @include text($Gar, 700, 24px, 36px, #101010);
     }
     &-text{
-      font-family: $Rob;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 24px;
-      color: #101010;
+      @include text($Rob, 400, 14px, 24px, #101010);
       margin: 30px 0 30px;
     }
   }

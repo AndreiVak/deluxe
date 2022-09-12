@@ -1,0 +1,16 @@
+.portfolio{
+  padding: 0 0 130px;
+  &__btns{
+    display: flex;
+    justify-content: space-around;
+  }
+  &__btn{
+    transition: 0.7s;
+    &:hover{
+      background: #f1eebd;
+      transition: 0.7s;
+      color: $black;
+    }
+  }
+}
+

@@ -1,0 +1,5 @@
+.repair__room {
+  padding: 129px 0 8px;
+  text-align: center;
+  background: url("../../src/images/repair/repairRoomBG.png") center/cover no-repeat;
+}

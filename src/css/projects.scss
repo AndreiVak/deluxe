@@ -2,12 +2,7 @@
   position: relative;
   padding: 80px 0 130px;
   &__title {
-    font-family: $Gar;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 45px;
-    color: $milk;
+    @include text($Gar, 700, 40px, 45px, $milk);
     text-align: center;
   }
   &__line {
@@ -26,38 +21,21 @@
     z-index: 5;
   }
   &__card {
-    min-width: 290px;
     width: calc(33.333% - 20px);
     text-align: center;
   }
   &__card-title {
     margin: 26px 0 7px;
-    font-family: $Gar;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 18px;
-    color: #FFFFFF;
+    @include text($Gar, 700, 16px, 18px, #fff);
   }
-  &__card-subtitle {
-    font-family: $Gar;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    color: #FFFFFF;
+  &__card-subtitle{
+    @include text($Gar, 400, 14px, 16px, #fff);
     margin-bottom: 34px;
   }
   &__before{
     position: absolute;
     left: 0;
     top: 38%;
-    z-index: 1;
-  }
-  &__after {
-    position: absolute;
-    right: -15%;
-    bottom: 15%;
     z-index: 1;
   }
   &__btns {
@@ -72,12 +50,7 @@
     width: 220px;
     border: 1px solid $milk;
     border-radius: 5px;
-    font-family: $Gar;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    color: $milk;
+    @include text($Gar, 400, 14px, 16px, $milk);
     background: transparent;
     &-active {
       background: $milk;
@@ -85,3 +58,99 @@
     }
   }
 }
+
+@media (max-width: 1440px) {
+  
+}
+
+@media (max-width: 1320px) {
+
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 1025px) {
+
+}
+
+@media (max-width: 992px) {
+    .projects__btns{
+      column-gap: 50px;
+    }
+  .projects__btns-btn{
+    width: 190px;
+    min-height: 58px;
+  }
+}
+
+@media (max-width: 876px) {
+    .projects{
+      padding: 70px 0 100px;
+      text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .projects__card{
+      width: calc(50% - 15px);
+    }
+  .projects__btns{
+    column-gap: 25px;
+  }
+  .projects__btns-btn{
+    margin-top: 30px;
+  }
+  .projects__btns-btn{
+    width: 175px;
+    min-height: 55px;
+  }
+  .projects{
+    padding: 60px 0 70px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 676px) {
+
+}
+
+@media (max-width: 576px) {
+  .projects{
+    padding: 30px 0 50px;
+  }
+  .projects__card{
+    column-gap: 20px;
+  }
+  .projects__card{
+    width: calc(50% - 10px);
+  }
+  .projects__card-subtitle{
+    margin-bottom: 25px;
+  }
+  .projects__card-title{
+    margin: 10px 0 7px;
+  }
+  .projects__before{
+    display: none;
+  }
+  .projects__after{
+    display: none;
+  }
+}
+
+@media (max-width: 425px) {
+  .projects__card{
+    width: 80%;
+  }
+}
+
+@media (max-width: 375px) {
+
+}
+
+@media (max-width: 325px) {
+
+}
+

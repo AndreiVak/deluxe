@@ -16,7 +16,7 @@
       width: 700px;
       height: 540px;
       background: url("../images/plan.png");
-      right: -30%;
+      right: -11%;
       top: -50%;
     }
     &:nth-child(3)::before{
@@ -38,30 +38,15 @@
       width: calc(50% - 20px);
     }
     &-info{
-      font-family: $Rob;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 10px;
-      line-height: 26px;
+      @include text($Rob, 400, 10px, 26px, #6E6E6E);
       text-transform: uppercase;
-      color: #6E6E6E;
     }
     &-title{
-      font-family: $Gar;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 40px;
-      line-height: 46px;
-      color: #E1DECE;
+      @include text($Gar, 700, 40px, 46px, #E1DECE);
       margin: 18px 0 30px;
     }
     &-desc{
-      font-family: $Rob;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 26px;
-      color: #C4C4C4;
+      @include text($Rob, 400, 16px, 26px, #C4C4C4);
     }
   }
   &__img{
